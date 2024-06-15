@@ -1,0 +1,190 @@
+* {
+    margin: 0px;
+    font-family: 'Jost', sans-serif;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.gradient_background {
+    background: linear-gradient(300deg, #974EC3, #313866, #504099);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+header {
+    height: 150px;
+    display: flex;
+}
+
+.heading {
+    color: whitesmoke;
+    padding: 15px 10px;
+    align-self: flex-end;
+}
+
+.heading>h1 {
+    font-size: 45px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading>p {
+    font-size: 20px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.isChecked {
+    text-decoration: line-through;
+}
+
+.hidden {
+    display: none;
+}
+
+.ribbon {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    width: 100%;
+    margin: 4px 0px;
+    gap: 20px;
+}
+
+#mainField {
+    font-size: 20px;
+    width: 100%;
+    height: 42px;
+    margin-left: 2px;
+    padding-left: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: space-between;
+    min-width: 215px;
+    height: 44px;
+    margin-right: 2px;
+    border-radius: 4px;
+    border: 2px solid gray;
+}
+
+#backBtn,
+#search,
+#searchBtn {
+    font-size: 20px;
+    height: 41.5px;
+    border: none;
+}
+
+#search {
+    width: 100%;
+}
+
+#searchBtn {
+    height: inherit;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+    background-color: gainsboro;
+    font-weight: bold;
+}
+
+#backBtn {
+    height: inherit;
+    width: 50px;
+    border-radius: 2px 0 0 2px;
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+#backBtn:hover,
+#searchBtn:hover {
+    background-color: gray;
+}
+
+#backBtn>img {
+    position: relative;
+    top: 3.5px;
+}
+
+.container {
+    width: 99%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px;
+
+}
+
+.container>label {
+    font-size: 25px;
+    padding-left: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.removeBtn {
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: gainsboro;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.removeBtn:hover {
+    background-color: gray;
+}
+
+.popUp {
+    width: 100%;
+    height: 100vh;
+    transform: scale(0);
+    text-align: center;
+}
+
+.active {
+    transform: scale(1);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.popUp>h1 {
+    color: #504099;
+    position: relative;
+    top: -40px;
+}
+
+footer {
+    height: 20vh;
+}
+
+.contact>p {
+    padding: 20px 0 10px 20px;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    padding: 0px 20px;
+}

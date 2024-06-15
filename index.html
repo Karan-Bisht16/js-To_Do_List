@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <header class="gradient_background">
+        <div class="heading">
+            <h1>My Day</h1>
+            <p id="date_time"></p>
+        </div>
+    </header>
+    <div class="main">
+        <div class="ribbon">
+            <div class="addTask">
+                <input type="text" id="mainField" placeholder=" + Add a task" autofocus>
+            </div>
+            <div class="searchBar">
+                <button id="backBtn" onclick="restoreOriginal();"><img src="./images/img-back-button.png"
+                        width="25px"></button>
+                <input type="text" id="search"><button id="searchBtn" type="button"
+                    onclick="searchTask();">Search</button>
+            </div>
+        </div>
+        <div id="result"></div>
+        <div id="popUp" class="popUp">
+            <img src="./images/img-not-found.png" width="200px">
+            <h1>Nobody here but us chickens</h1>
+        </div>
+    </div>
+    <footer class="gradient_background">
+        <div class="contact">
+            <p>- BY KARAN BISHT</p>
+            <div class="links">
+                <a href="https://instagram.com/karan_b1603" target="_blank">
+                    <img src="./images/img-instagram.png" width="45px"></a>
+                <a href="https://twitter.com/karan_b1603" target="_blank">
+                    <img src="./images/img-twitter.png" width="45px"></a>
+                <a href="https://github.com/Karan-Bisht16" target="_blank">
+                    <img src="./images/img-github.png" width="45px"></a>
+                <a href="https://www.linkedin.com/in/karan-bisht-583918254/" target="_blank">
+                    <img src="./images/img-linkedin.png" width="45px"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
